@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>asseseement<title>
+</head>
+<body>
+<section id="form">
+</section>
+
+<script>
+ let section=document.getElementById("form");
+let form=document.createElement("form");
+let input=document.createElement("input");
+let input1=document.createElement("input");
+let input2=document.createElement("input");
+let input3=document.createElement("input");
+let br=document.createElement("br");
+let button=document.createElement("button");
+
+
+
+//add attributes
+form.document.setAttibute("action","#");
+form.document.setAttibute("method","get");
+
+input.document.setAttibute("type","text");
+input.document.setAttibute("placeholder","username");
+input.document.setAttibute("name","username");
+
+input.document.setAttibute("type","password");
+input.document.setAttibute("placeholder","password");
+input.document.setAttibute("name","password");
+
+input.document.setAttibute("type","email");
+input.document.setAttibute("placeholder","email");
+input.document.setAttibute("name","email");
+
+input.document.setAttibute("type","tel");
+input.document.setAttibute("placeholder","moblieno");
+input.document.setAttibute("name","mobile");
+
+button.textContent="submit"
+
+section.appendChild(form);
+form.appendChild(input);
+form.appendChild(br);
+form.appendChild(input1);
+form.appendChild(br);
+form.appendChild(input2);
+form.appendChild(br);
+form.appendChild(input3);
+form.appendChild(br);
+form.appendChild(submit);
+
+
+
+//display values
+
+let click=document.getElementByTagName("button");
+
+click.addEventListener("click",a=>{
+document.write(input.a.target.value);
+document.write(input1.a.target.value);
+document.write(input2.a.target.value);
+document.write(input3.a.target.value);
+
+
+});
+</script>
+</body>
+</html>

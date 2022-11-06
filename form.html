@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="form">
+    </section>
+    
+    <script>
+     let section=document.getElementsByTagName("section");
+    let form=document.createElement("form");
+    let input=document.createElement("input");
+    let input1=document.createElement("input");
+    let input2=document.createElement("input");
+    let input3=document.createElement("input");
+    let br=document.createElement("br");
+    let button=document.createElement("button");
+    
+    
+    
+    //add attribu
+    form.setAttribute("action","#");
+    form.setAttribute("method","get");
+    
+    input.setAttribute("type","text");
+    input.setAttribute("placeholder","username");
+    input.setAttribute("name","username");
+    
+    input1.setAttribute("type","password");
+    input1.setAttribute("placeholder","password");
+    input1.setAttribute("name","password");
+    
+    input2.setAttribute("type","email");
+    input2.setAttribute("placeholder","email");
+    input2.setAttribute("name","email");
+    
+    input3.setAttribute("type","tel");
+    input3.setAttribute("placeholder","moblieno");
+    input3.setAttribute("name","mobile");
+    
+    button.textContent="submit"
+    
+    section[0].appendChild(form);
+    form.appendChild(input);
+    form.appendChild(br);
+    form.appendChild(input1);
+    form.appendChild(br);
+    form.appendChild(input2);
+    form.appendChild(br);
+    form.appendChild(input3);
+    form.appendChild(br);
+    form.appendChild(button);
+    
+    
+    
+    //display values
+    
+    // let click=document.querySelector("button");
+    
+    button.addEventListener("click",a=>{
+    a.preventDefault();
+    document.write(input.value);
+    document.write(input1.value);
+    document.write(input2.value);
+    document.write(input3.value);
+    
+    
+    });
+    </script>
+</body>
+</html>
